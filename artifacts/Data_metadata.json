@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "BookRecord",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "author",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "checkID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "Title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Author",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ID",
+						"type": "uint256"
+					}
+				],
+				"name": "checkbook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Samples/structExample.sol": "Data"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Samples/structExample.sol": {
+			"keccak256": "0x181bf3608f2735a6c3b5218f13ab83397fc705c9412963caa5ef24f4c393d3fd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3f9c39dd65c04d202aff59d892f2d31f0c8b11b606313f6c5c4f4f353693b52d",
+				"dweb:/ipfs/QmTefdGjR64hgrQ8CStEG2WnorvP9mihb9wBz5yDwU3HKz"
+			]
+		}
+	},
+	"version": 1
+}

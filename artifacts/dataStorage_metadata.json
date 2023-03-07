@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "addArray",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "anynumber",
+						"type": "uint256"
+					}
+				],
+				"name": "arraydata",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getResult",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Samples/recordarray.sol": "dataStorage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Samples/recordarray.sol": {
+			"keccak256": "0xe39de48d09c25ee0e539de6007ce618a33cd870b9e35d50656c0c54f3b8d46e3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c4b6218354eed22e38eef0b96c237b6209714f9b890261fb5667c95156d529a3",
+				"dweb:/ipfs/QmNvVGe9Ub9HPtwXwfVyddozwhB66Bvj4bVKXxpo39TCDn"
+			]
+		}
+	},
+	"version": 1
+}

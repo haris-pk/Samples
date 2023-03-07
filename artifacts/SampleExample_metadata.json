@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "checkmark",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Samples/task3.sol": "SampleExample"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Samples/task3.sol": {
+			"keccak256": "0xf786ad7f12150c5d6c17dcc847db450dbb9539ad9b75a8d0b3fd7b2449381b19",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a86dbe3c8d152bd9bab0accc9f1c091dee6330ac4908ab414c16d8dbc628fe8f",
+				"dweb:/ipfs/QmWmV9DDmBm7iAxmvwhXHK3LQYNSn2u1X3B6p1HvEJaPmS"
+			]
+		}
+	},
+	"version": 1
+}

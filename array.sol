@@ -2,21 +2,36 @@
 pragma solidity ^0.8.7;
 
 contract example{
-
-    uint[] balance;
-
-    function arrayCheck(uint256 anyNumber) public {
-        balance.push(anyNumber);
-    }
-
-    function checkArray() public pure returns(uint[5] memory){
-        uint[5] memory data = [uint(50), 63, 77, 28, 90];
-        return data;
-    }
-
-    function getDynmaicArray() public view returns(uint256[] memory){
-        return balance;
-    }
-
-
+    
+address public owner;
+constructor (){
+    isExist[msg.sender]=true;
+    owner = msg.sender;
 }
+
+    mapping(address => bool) public isExist;
+    uint result;
+
+
+    function SetWhiteList( address user) public{
+        if(msg.sender==owner){
+            isExist[user]=true;
+        }
+        else{
+            revert("not accessible");
+        }
+ 
+    }
+
+    function add( uint num1, uint num2) public{
+        if(isExist[msg.sender]){
+            result=num1 + num2;
+        }
+        else{
+            revert("user is not in white list");
+        }
+    }
+
+    function resultShow() public view returns(uint){
+        return result;
+    }
