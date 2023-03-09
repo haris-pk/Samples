@@ -14,64 +14,47 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
+						"name": "vehicleID",
 						"type": "uint256"
 					},
 					{
-						"internalType": "uint256",
-						"name": "b",
-						"type": "uint256"
-					}
-				],
-				"name": "division",
-				"outputs": [
+						"internalType": "string",
+						"name": "Name",
+						"type": "string"
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "Price",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "addVehicle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "b",
+						"name": "vehicleID",
 						"type": "uint256"
 					}
 				],
-				"name": "multiplication",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
+				"name": "buyVehicle",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "b",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "subtraction",
+				"name": "indexOf",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -79,7 +62,41 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "showVehicle",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "sold",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -96,7 +113,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/task2.sol": "solidityTest"
+			"Samples/vehicleShowRoom.sol": "vehicleShowRoom"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -110,12 +127,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/task2.sol": {
-			"keccak256": "0x57e3b4222d2abcae6ccd873ee9482e5fc1c22728347e964d5e8ee1ac077f5be1",
+		"Samples/vehicleShowRoom.sol": {
+			"keccak256": "0xc156acc01aa48a356bb8c01bf4a84af0af3d6370e78f0d94b9ae217581c17fd9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dae30d52f04c12fcc88539b165829828e241637c6883bfdfbe27f3b30ca6740d",
-				"dweb:/ipfs/QmW3qgMSJzrKpZ1rW4WaPgujNHwbBWbAhdELLEYJL2vU2X"
+				"bzz-raw://b4ac26648b1487bd6379f57fc89a1dda6f1b2655145546b6d762636ae9f2bda4",
+				"dweb:/ipfs/Qmc8fMXvd157hCz1Pwc1PnPSfZNSLfJM7s4Ri4L7GeEcQ2"
 			]
 		}
 	},

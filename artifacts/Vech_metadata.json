@@ -8,27 +8,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "anyNumber",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
 					}
 				],
-				"name": "arraySequence",
+				"name": "listOfVehicles",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "result",
-				"outputs": [
-					{
-						"internalType": "uint256[]",
-						"name": "",
-						"type": "uint256[]"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/finalarray.sol": "example"
+			"Samples/vehicleShowRoom.sol": "Vech"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/finalarray.sol": {
-			"keccak256": "0xc98a39d79f63e01eac889e93a2a5c588f6d79b12bc71511265e01e0e77fade46",
+		"Samples/vehicleShowRoom.sol": {
+			"keccak256": "0xebad5ab3c94c0cfc9a7f2a54daccf3aa297b4ffb9c0ffb470c1e9a352df184e7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://24582642db7d8f4832c0881159ac359b80897d587d2cb2f0a04c52be5e9fb306",
-				"dweb:/ipfs/QmYyaB8YEpmKTnjBLbVXip1j3s2M2H77sggdDEm5twaJDN"
+				"bzz-raw://2775cf4c71db7d9ae9917b51655f5421762f84291842dd782ffb29089ef54631",
+				"dweb:/ipfs/QmWeuBynhkA2qeZTJoxLiSqFbAzktHbfcEPVvXxh5CkjfS"
 			]
 		}
 	},

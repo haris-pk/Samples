@@ -7,35 +7,40 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "addArray",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "getarray",
+				"name": "contractOwner",
 				"outputs": [
 					{
-						"internalType": "uint256[5]",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256[5]"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
 					{
-						"internalType": "uint256[]",
-						"name": "value",
-						"type": "uint256[]"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "setarray",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendEther",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -52,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/array10.sol": "task"
+			"Samples/transfer.sol": "trasnfer"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -66,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/array10.sol": {
-			"keccak256": "0x978cfdf059d01f83c85e615bd29765ec4b15c94be15422ed844813220020504e",
+		"Samples/transfer.sol": {
+			"keccak256": "0xac2254be1f0d928a7c8a05ac0129cb519c32e8e4847ab88f15effc2ec8286abc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aca05ee8951ef4f4bb29ef3676c96b4991791c2a0eeec6be97e54f90768ffdf6",
-				"dweb:/ipfs/QmUNqpdjMtGzC1fpKUXEQnpEZAnYaC2MaH5zEyy6QPQc7h"
+				"bzz-raw://6aa17e4f256f534fc38f759b50b8c5a72d64e2ff1f0577f97e27e78c566f17c1",
+				"dweb:/ipfs/QmRUQ3Eh2FqaQ2x967b4MbPKtqmQhdDCeh1sDnQ5DaFqJe"
 			]
 		}
 	},

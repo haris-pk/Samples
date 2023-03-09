@@ -9,57 +9,75 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "propertyID",
 						"type": "uint256"
 					}
 				],
-				"name": "BookRecord",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "author",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "book_id",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "PurchaseRecord",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "checkID",
+						"name": "CheckID",
 						"type": "uint256"
 					},
 					{
 						"internalType": "string",
-						"name": "Title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "Author",
+						"name": "name",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "ID",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "areaSqFoot",
 						"type": "uint256"
 					}
 				],
-				"name": "checkbook",
+				"name": "SellRecord",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "checkRecord",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "area_sq",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -76,7 +94,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/examplearray2.sol": "Data"
+			"Samples/testweek.sol": "SellPurchase"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -90,12 +108,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/examplearray2.sol": {
-			"keccak256": "0xbb73d3ca3bbe958e2d07a65f8151711cfe5bd042fff74310bf6828fbf4e158fd",
+		"Samples/testweek.sol": {
+			"keccak256": "0xe562000c4557620e68fd7a5abb64a9c985b0daa5891b43d0d5ff67948800ccdc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5a3108d43fb28671494470a9a30881971bc15131a3db1d61e5532a8f2fb90e60",
-				"dweb:/ipfs/QmVJeR4SS71u814qznjKa1NZxSdAajMZhAgBzUE7zo3ndW"
+				"bzz-raw://71b808e8ec6398a2fb928e403d881b7289bb002d5ab96f83ebda8568483fec1e",
+				"dweb:/ipfs/QmZKygdqwJNpXN8sCPkGy16qB6L9aHeWNh6a9sCpu115rG"
 			]
 		}
 	},
