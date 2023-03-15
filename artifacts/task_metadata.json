@@ -7,33 +7,25 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "addArray",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "getarray",
+				"name": "Result",
 				"outputs": [
 					{
-						"internalType": "uint256[5]",
+						"internalType": "uint256",
 						"name": "",
-						"type": "uint256[5]"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256[]",
-						"name": "value",
-						"type": "uint256[]"
-					}
-				],
-				"name": "setarray",
+				"inputs": [],
+				"name": "add",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -52,7 +44,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/array10.sol": "task"
+			"Samples/loop.sol": "task"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -66,12 +58,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/array10.sol": {
-			"keccak256": "0x978cfdf059d01f83c85e615bd29765ec4b15c94be15422ed844813220020504e",
+		"Samples/loop.sol": {
+			"keccak256": "0x227ae143855c00bb24afa9187b3fa08202b881f3e4bda0c3fd6b759f63f15120",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aca05ee8951ef4f4bb29ef3676c96b4991791c2a0eeec6be97e54f90768ffdf6",
-				"dweb:/ipfs/QmUNqpdjMtGzC1fpKUXEQnpEZAnYaC2MaH5zEyy6QPQc7h"
+				"bzz-raw://48432ade2c05410145d52a7264b1eb466b0aa5f7952689deeab4fa5ad3eadebf",
+				"dweb:/ipfs/QmPhBiPrbg7pPLgLdsYJaDGdErkMBSCzP5rthfYj6A9eSk"
 			]
 		}
 	},

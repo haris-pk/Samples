@@ -11,10 +11,19 @@
 				"type": "constructor"
 			},
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "vehicleID",
+						"name": "playerID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "PlayerNo",
 						"type": "uint256"
 					},
 					{
@@ -23,12 +32,27 @@
 						"type": "string"
 					},
 					{
+						"internalType": "string",
+						"name": "Job",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Category",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Salary",
+						"type": "uint256"
+					},
+					{
 						"internalType": "uint256",
 						"name": "Price",
 						"type": "uint256"
 					}
 				],
-				"name": "addVehicle",
+				"name": "addplayer",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -37,29 +61,16 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "vehicleID",
+						"name": "playerID",
 						"type": "uint256"
 					}
 				],
-				"name": "buyVehicle",
+				"name": "getaPlayer",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "count",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -67,35 +78,31 @@
 						"type": "uint256"
 					}
 				],
-				"name": "indexOf",
+				"name": "playerDetails",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "playerno",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "showVehicle",
-				"outputs": [
+					},
 					{
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
 					},
 					{
+						"internalType": "string",
+						"name": "job",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
 						"internalType": "uint256",
-						"name": "price",
+						"name": "salary",
 						"type": "uint256"
 					},
 					{
@@ -104,13 +111,17 @@
 						"type": "bool"
 					},
 					{
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -126,7 +137,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/vehicleShowRoom.sol": "vehicleShowRoom"
+			"Samples/practiceOne.sol": "Team"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -140,12 +151,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/vehicleShowRoom.sol": {
-			"keccak256": "0x56f11d3568a3373fbcfecec0230e0c4acf99f6a425ce334591cf92b558c36310",
+		"Samples/practiceOne.sol": {
+			"keccak256": "0xbad83313dc90c4620c71b4406761f75f9cf591a05ceee4e7dc5c4a66d61fb57c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fd0d13b17af82a7a679bdea8341852837096360ce12d9a79540575e2691c90f4",
-				"dweb:/ipfs/QmdLZHz9FysagemHUrNmufFPSoxWuNYboLyjiv2NS24TqF"
+				"bzz-raw://b7a8f1109064d55a3da3fa066bc329e513774d8c046695f20f69de22e4bbcf6b",
+				"dweb:/ipfs/Qmd6s4hpMPqAVS89d6B4emaw4v5GYbVHxvaCbQEHpJEYcx"
 			]
 		}
 	},

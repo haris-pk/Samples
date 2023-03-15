@@ -13,43 +13,6 @@
 						"type": "address"
 					}
 				],
-				"name": "allowence",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					}
-				],
-				"name": "approve",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
 				"name": "balance",
 				"outputs": [
 					{
@@ -70,19 +33,6 @@
 					}
 				],
 				"name": "balanceof",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "totalsupply",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -129,7 +79,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "transferfrom",
+				"name": "transferFrom",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -148,7 +98,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/erc20.sol": "example"
+			"Samples/erc20example.sol": "testing"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -162,12 +112,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/erc20.sol": {
-			"keccak256": "0x5ec7d3b3ad89d145dc384d28508eda76b71d703fa3407c3a8d76f5908454850e",
-			"license": "MIT",
+		"Samples/erc20example.sol": {
+			"keccak256": "0x2d834cf9f363b873e0723fe0c3f915674120ba61af85c6bad8fd06f2b7f5bca2",
 			"urls": [
-				"bzz-raw://ae0c63db6126d69a36faeb35ba1f84a3a9381bb5bc187d1689b86b025b269d15",
-				"dweb:/ipfs/Qmetk34woNBdfofyPFw53UuYZUutQiK8ewVGkQGdqunE24"
+				"bzz-raw://c761d582530a538e94542b0beac6c88b680cb020265e1930b7678a6b3269db19",
+				"dweb:/ipfs/QmWuL5HqTEkmNgfs3BdtKP5hUZWuRmgSyHNnJdXg45w74u"
 			]
 		}
 	},

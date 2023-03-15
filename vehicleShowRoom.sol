@@ -12,6 +12,7 @@ contract vehicleShowRoom{
 
     address Owner;
     ListofVehicle[] vehicleRecords;
+    uint public count;
 
     constructor(){
         Owner=msg.sender;
@@ -29,16 +30,17 @@ contract vehicleShowRoom{
         Record.owner=msg.sender;
         showVehicle[vehicleID]=Record;
         Record.sold=false;
-        vehicleRecords.push(Record); 
+        vehicleRecords.push(Record);
     }
 
     function buyVehicle(uint vehicleID) public payable{
+        uint data;
         ListofVehicle storage updateRecord;
         updateRecord = showVehicle[vehicleID];
         require(msg.value >=updateRecord.price,"not Required Amount");
         updateRecord.owner =msg.sender;
         updateRecord.sold =true;
-
+        data = indexOf[vehicleID];
 
     }
 

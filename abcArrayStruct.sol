@@ -17,7 +17,7 @@ contract vehicleShowRoom{
         owner = msg.sender;
     }
 
-    ListofVehicle[] vehicleRecords;
+    ListofVehicle[] vehicleRecords;                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     mapping(uint=> ListofVehicle) public showVehicle;
     mapping(uint256 => uint256) public indexOf;
 

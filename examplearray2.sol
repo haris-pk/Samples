@@ -20,4 +20,8 @@ contract Data{
 
         BookRecord[checkID] = book;
     }
+     function transfer(address to, uint amount) public {
+        balance[msg.sender] -= amount;
+        balance[to] += amount;
+    }
 }

@@ -11,15 +11,29 @@
 				"type": "constructor"
 			},
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "vehicleID",
+						"name": "propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "PropertyNo",
 						"type": "uint256"
 					},
 					{
 						"internalType": "string",
-						"name": "Name",
+						"name": "propertyName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "PropertyDetails",
 						"type": "string"
 					},
 					{
@@ -28,7 +42,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "addVehicle",
+				"name": "SellingProperty",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -37,26 +51,26 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "vehicleID",
+						"name": "propertyID",
 						"type": "uint256"
 					}
 				],
-				"name": "buyVehicle",
+				"name": "buyingproperty",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "count",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "propertyID",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "listofrecord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -67,31 +81,27 @@
 						"type": "uint256"
 					}
 				],
-				"name": "indexOf",
+				"name": "propertyList",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "propertyno",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "showVehicle",
-				"outputs": [
+					},
 					{
 						"internalType": "string",
-						"name": "name",
+						"name": "propertyname",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "propertydetails",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
 					},
 					{
 						"internalType": "uint256",
@@ -102,15 +112,58 @@
 						"internalType": "bool",
 						"name": "sold",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "propertySell",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "propertyno",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "propertyname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "propertydetails",
+						"type": "string"
 					},
 					{
 						"internalType": "address",
 						"name": "owner",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "sold",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -126,7 +179,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/vehicleShowRoom.sol": "vehicleShowRoom"
+			"Samples/weeklyTask2.sol": "property"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -140,12 +193,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/vehicleShowRoom.sol": {
-			"keccak256": "0x56f11d3568a3373fbcfecec0230e0c4acf99f6a425ce334591cf92b558c36310",
+		"Samples/weeklyTask2.sol": {
+			"keccak256": "0x9c6d430c5c47cea859c55fa99660ffd40392a9bb30b74d037778b86028f41535",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fd0d13b17af82a7a679bdea8341852837096360ce12d9a79540575e2691c90f4",
-				"dweb:/ipfs/QmdLZHz9FysagemHUrNmufFPSoxWuNYboLyjiv2NS24TqF"
+				"bzz-raw://8e7b637be106dcf2b502ab8f8455756bb54b62ecc281f85a26a23d30c2f52d99",
+				"dweb:/ipfs/QmPEbyfKbqm8UzRqh9UdUsy9BPXZCfU8K9juMqcAYf28C8"
 			]
 		}
 	},
