@@ -11,6 +11,10 @@
 				"type": "constructor"
 			},
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -28,7 +32,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "addVehicle",
+				"name": "addvehicle",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -41,7 +45,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "buyVehicle",
+				"name": "buytheVehicle",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -54,6 +58,41 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRecords",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "sold",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct vehicleShowRoom.ListofVehicle[]",
+						"name": "",
+						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -99,18 +138,22 @@
 						"type": "uint256"
 					},
 					{
-						"internalType": "bool",
-						"name": "sold",
-						"type": "bool"
-					},
-					{
 						"internalType": "address",
 						"name": "owner",
 						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "sold",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -126,7 +169,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/vehicleShowRoom.sol": "vehicleShowRoom"
+			"Samples/abcArrayStruct.sol": "vehicleShowRoom"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -140,12 +183,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/vehicleShowRoom.sol": {
-			"keccak256": "0x56f11d3568a3373fbcfecec0230e0c4acf99f6a425ce334591cf92b558c36310",
+		"Samples/abcArrayStruct.sol": {
+			"keccak256": "0x8988acfe9418a799888560c3300a59de9335c9de478c23a2e33c6808c4870972",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fd0d13b17af82a7a679bdea8341852837096360ce12d9a79540575e2691c90f4",
-				"dweb:/ipfs/QmdLZHz9FysagemHUrNmufFPSoxWuNYboLyjiv2NS24TqF"
+				"bzz-raw://2ea408b27f39e170f0c16b5d7c90103977156b99d23ccf2268905c4f566f776c",
+				"dweb:/ipfs/QmQvyFpUahWEDWuKGs42AGX6rESNCaJgkSwQA432mNjEKx"
 			]
 		}
 	},

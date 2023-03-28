@@ -6,6 +6,29 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "_mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -163,11 +186,11 @@
 	},
 	"sources": {
 		"Samples/erc20.sol": {
-			"keccak256": "0x5ec7d3b3ad89d145dc384d28508eda76b71d703fa3407c3a8d76f5908454850e",
+			"keccak256": "0xe4f9d0f5e502eb1ba10e5cac859b0895bfe4b8ceb40e0803914649c2bdd8a772",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ae0c63db6126d69a36faeb35ba1f84a3a9381bb5bc187d1689b86b025b269d15",
-				"dweb:/ipfs/Qmetk34woNBdfofyPFw53UuYZUutQiK8ewVGkQGdqunE24"
+				"bzz-raw://14452d74440d90211968a858c2c833c9ea07b06788d748b1d4ae8204ee4baf62",
+				"dweb:/ipfs/QmQ2HgZfhoCSgtocoy6pAZPXPFzNMRqhfYNiTtgcUDksHN"
 			]
 		}
 	},
