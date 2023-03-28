@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -34,6 +34,11 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"name": "allowence",
@@ -50,14 +55,14 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
 					}
 				],
 				"name": "approve",
@@ -171,9 +176,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/erc20.sol": "example"
+			"Samples/erc20function.sol": "example"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -185,12 +190,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/erc20.sol": {
-			"keccak256": "0xe4f9d0f5e502eb1ba10e5cac859b0895bfe4b8ceb40e0803914649c2bdd8a772",
+		"Samples/erc20function.sol": {
+			"keccak256": "0xeff97526fdac978235eca0c46759f1614e352feee395a12b5147985263579d15",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://14452d74440d90211968a858c2c833c9ea07b06788d748b1d4ae8204ee4baf62",
-				"dweb:/ipfs/QmQ2HgZfhoCSgtocoy6pAZPXPFzNMRqhfYNiTtgcUDksHN"
+				"bzz-raw://ffa78e90562aad0fef7702ad8245fd806b825bd8143f76d8ceb1be9625b14988",
+				"dweb:/ipfs/QmaZTnGFNdhm5mWmDtaUAnCED3bgYdc38MHmJ7v27UWdZK"
 			]
 		}
 	},

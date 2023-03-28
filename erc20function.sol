@@ -9,7 +9,8 @@ contract example {
     }
 
     mapping(address => uint) public balance;
-    mapping(address => uint) public allowence; 
+    //mapping(address => uint) public allowence;
+    mapping(address => mapping(address => uint256)) public allowence; 
 
     uint total_supply;
 
@@ -31,15 +32,14 @@ contract example {
 
     function transferfrom(address from, address to, uint amount) public{
     
-        require(amount < allowence[from], "not authorized");
-        require(amount <= balance[from], "amount must be less than from");
-
+        require(amount < allowence[from][msg.sender], "not authorized");
         balance[from] -= amount;
-        balance[to] += amount;   
+        balance[to] += amount;
+        allowence[from][msg.sender] -= amount;   
     }
 
-    function approve(address from, uint amount) public{
-        allowence[from] += amount;
+    function approve(address spender, uint amount) public{
+        allowence[msg.sender][spender] += amount;
     }
 
  }  
