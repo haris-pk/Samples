@@ -15,7 +15,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -28,7 +28,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/interface2.sol": "calculate"
+			"Samples/interface.sol": "e"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -60,19 +60,11 @@
 	},
 	"sources": {
 		"Samples/interface.sol": {
-			"keccak256": "0x7f4fcbcdc1c0bb6d29bffba48fcd1c43455b38b1a4cfe2ef10ef12945dd4f681",
+			"keccak256": "0x18558d736380557481548bbe25cd8f97febeb7a47ec29e87c0e124c4dad16fdd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4380dbe49269ea4a59649391bd673ad862ef57a887c193847469d830be20a718",
-				"dweb:/ipfs/QmbbHcUQgnvjzqKmnLsycab53sQJrMmbjmx1CGFPQ9Qkg4"
-			]
-		},
-		"Samples/interface2.sol": {
-			"keccak256": "0xd107156909bca4a7ac0d5e48817dfc0872d133ea319f91123bb3326ce15f8495",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://062544e58ef90d894fe4586fc2f8357fea752b13ae9e40cdb219157c8ad17b2a",
-				"dweb:/ipfs/QmXSv9GUGq9TTVBaGki9dd3VuqeA4UptY1gB1K3y1x5cuY"
+				"bzz-raw://3b0cb39a07dfa70e0b40d27a54e0077b3c764643021ec0dd42e9db5f465a8b3f",
+				"dweb:/ipfs/QmTUTjxKZQ5phFroSzqvyyr3Bc2eRNfhwBM6y5NRoq41He"
 			]
 		}
 	},

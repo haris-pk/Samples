@@ -6,11 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -32,30 +27,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "allowence",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
 						"name": "spender",
 						"type": "address"
 					},
@@ -68,25 +39,6 @@
 				"name": "approve",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -176,7 +128,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/checkinterface.sol": "example"
+			"Samples/interfaceERC20.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -190,14 +142,6 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/checkinterface.sol": {
-			"keccak256": "0x40dd3a7e4d960535da5e8b8e51c58cc5a6ae45751c94f9b59efe394a0f80598e",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://dead07050d00a75ee82969492c14ca1941a21e6107e2b8f066c0df5cc9a12e8c",
-				"dweb:/ipfs/QmWUEAsqRwddTczjEJQTFBGtJ3n323PAojEGKV7NCogxFj"
-			]
-		},
 		"Samples/interfaceERC20.sol": {
 			"keccak256": "0xef2f699018d3aa01be56b73db70bd800153c3d0b1f6ba7f22675ea2371ef6d73",
 			"license": "MIT",

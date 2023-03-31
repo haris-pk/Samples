@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-contract example {
+import "./interfaceERC20.sol";
+
+contract example is IERC20{
 
     constructor() {
         _mint(msg.sender, 1000000000 *10**18);
@@ -14,23 +16,23 @@ contract example {
 
     uint total_supply;
 
-    function totalsupply() public view returns(uint){
+    function totalsupply() public override view returns(uint){
         return total_supply;
     }
-    function _mint(address _userAddress, uint256 _amount) public{
+    function _mint(address _userAddress, uint256 _amount) public override{
         balance[_userAddress] = _amount;
     }
 
-    function balanceof(address checkbalance) public view returns(uint){
+    function balanceof(address checkbalance) public override view returns(uint){
         return balance[checkbalance];
     }
 
-    function transfer(address to, uint amount) public{
+    function transfer(address to, uint amount) public override{
         balance[msg.sender] = amount;
         balance[to] +=amount;
     }
 
-    function transferfrom(address from, address to, uint amount) public{
+    function transferfrom(address from, address to, uint amount) public override{
     
         require(amount < allowence[from][msg.sender], "not authorized");
         balance[from] -= amount;
@@ -38,7 +40,7 @@ contract example {
         allowence[from][msg.sender] -= amount;   
     }
 
-    function approve(address spender, uint amount) public{
+    function approve(address spender, uint amount) public override{
         allowence[msg.sender][spender] += amount;
     }
 

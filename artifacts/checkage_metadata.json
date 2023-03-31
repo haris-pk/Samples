@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "myaddress",
+						"type": "address"
+					}
+				],
+				"name": "getage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Samples/interface initial.sol": "checkage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Samples/interface initial.sol": {
+			"keccak256": "0x29002f6915d9172d839d77ca0e464766aec77ac6fa8650d152c63aabbf992ce2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://def30e819d1969e7e2d33c623661375c28e738d84d2cca669e73083f162b3449",
+				"dweb:/ipfs/QmUMdZwmnzdk5YaTqWvqKoYqsP2iAxmSN9vyoqiD8L32FR"
+			]
+		}
+	},
+	"version": 1
+}

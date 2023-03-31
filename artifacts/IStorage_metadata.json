@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_data",
+						"type": "string"
+					}
+				],
+				"name": "setData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Samples/interfaceTest.sol": "IStorage"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Samples/interfaceTest.sol": {
+			"keccak256": "0xf46be5438e38379bd9ee980ece760e2aa8dbe90e60fe2d6c894c241b724b67e8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://665f6829912da93035bdca9175d4667989215db3dfc2dc0694ba786833a133b0",
+				"dweb:/ipfs/QmZVFyQrW5Ls83Eb92uMC256LFsCGZo8Pm2KdjFRE9JBa6"
+			]
+		}
+	},
+	"version": 1
+}

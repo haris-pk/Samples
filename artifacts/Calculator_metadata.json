@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
@@ -15,7 +15,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -28,7 +28,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,9 +45,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/interface2.sol": "calculate"
+			"Samples/interface.sol": "calculator"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -65,14 +65,6 @@
 			"urls": [
 				"bzz-raw://4380dbe49269ea4a59649391bd673ad862ef57a887c193847469d830be20a718",
 				"dweb:/ipfs/QmbbHcUQgnvjzqKmnLsycab53sQJrMmbjmx1CGFPQ9Qkg4"
-			]
-		},
-		"Samples/interface2.sol": {
-			"keccak256": "0xd107156909bca4a7ac0d5e48817dfc0872d133ea319f91123bb3326ce15f8495",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://062544e58ef90d894fe4586fc2f8357fea752b13ae9e40cdb219157c8ad17b2a",
-				"dweb:/ipfs/QmXSv9GUGq9TTVBaGki9dd3VuqeA4UptY1gB1K3y1x5cuY"
 			]
 		}
 	},
