@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getResult",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "multiply",
+				"name": "addtheNumbers",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/interface.sol": "calculator"
+			"Samples/inter.sol": "Implement"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/interface.sol": {
-			"keccak256": "0x7f4fcbcdc1c0bb6d29bffba48fcd1c43455b38b1a4cfe2ef10ef12945dd4f681",
+		"Samples/inter.sol": {
+			"keccak256": "0x59f37188811346073be0ebbb9be5bc06a9976fb5dc171aa8602fe2c5abac3dbf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4380dbe49269ea4a59649391bd673ad862ef57a887c193847469d830be20a718",
-				"dweb:/ipfs/QmbbHcUQgnvjzqKmnLsycab53sQJrMmbjmx1CGFPQ9Qkg4"
+				"bzz-raw://69e379ee96cf939bfcfcce87a06f75ee9787f936db6db0230d8b1d670361d006",
+				"dweb:/ipfs/QmTXRBjtix9Qng6X3cnbFSznXtNq4kV4bG4WLfQYoQDCFe"
 			]
 		}
 	},

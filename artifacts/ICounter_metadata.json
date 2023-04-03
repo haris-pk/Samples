@@ -39,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/counter.sol": "ICounter"
+			"Samples/interface initial 2.sol": "ICounter"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -53,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/counter.sol": {
-			"keccak256": "0x399413045869267ccb3abb694221e8fdd1f33e713ffb1cbd8d97cad496a383ca",
+		"Samples/interface initial 2.sol": {
+			"keccak256": "0x927f30467fc63e6381ac27a4948c3778056ce8d15f37c2c59496ad7e529e0d45",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ab918d512b56baec25c5e2881745192128d942ef9652dc991725a62534d160f6",
-				"dweb:/ipfs/QmZaN4u5yTCyWsAfz91GzuqdfHuc8MbuNSrJmGseMT8wsc"
+				"bzz-raw://e5d83fa95fe114113ff77226100f5e6bd4a6aa5040de731c6b7e7852bb3d32ca",
+				"dweb:/ipfs/QmZDbgw3j3gGF53VLurQ472kCeqXNAgQEXJ7UbvGNz7n8x"
 			]
 		}
 	},

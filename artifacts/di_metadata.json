@@ -96,7 +96,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/difference.sol": "check"
+			"Samples/difference.sol": "di"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -119,11 +119,11 @@
 			]
 		},
 		"Samples/difference.sol": {
-			"keccak256": "0x8940ac82da26f13afc56846cf27ee17cb237712e7593106eec3dcf7a20e4f27f",
+			"keccak256": "0x681b6b62e5ccea432bb5dacd55d77d876c13b79f14b8167de449559b06dc7f4c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0f8ba12b53a06c221f5bcc92709e8ab7e1d818c90085af7460064d39cd8bcf31",
-				"dweb:/ipfs/QmUbGJK8hqqFwhjcR613RxnzrLpNmVYbEaTEpvGoT7xxqs"
+				"bzz-raw://32bcdf6d2577db0228523a8a4078abe9021c15cf179bd118f5947ff4ec3c3196",
+				"dweb:/ipfs/QmSKUDB3oiDRV8b9KLjXuBGhRsTiqGN6iFXPicMWxmhzFn"
 			]
 		}
 	},

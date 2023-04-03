@@ -6,8 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getResult",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "addtheNumbers",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,20 +26,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "multiply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -45,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/interface.sol": "calculator"
+			"Samples/IImplement.sol": "IImplement"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/interface.sol": {
-			"keccak256": "0x7f4fcbcdc1c0bb6d29bffba48fcd1c43455b38b1a4cfe2ef10ef12945dd4f681",
+		"Samples/IImplement.sol": {
+			"keccak256": "0x134e058d465ae5a6fb763050531748b01aa05993b963e4ef761fb7a5b32f489d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4380dbe49269ea4a59649391bd673ad862ef57a887c193847469d830be20a718",
-				"dweb:/ipfs/QmbbHcUQgnvjzqKmnLsycab53sQJrMmbjmx1CGFPQ9Qkg4"
+				"bzz-raw://f431475688867496f4ea8d6100f62480b694cc821dc2fd991d861ddcd0b6e5f2",
+				"dweb:/ipfs/QmR7jWNDjdJb3CbbccGb1sPtS84ziBDwCmcd3gW9MBixe1"
 			]
 		}
 	},

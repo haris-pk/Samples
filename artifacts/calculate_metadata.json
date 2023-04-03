@@ -7,20 +7,75 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getResult",
-				"outputs": [
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "SetWhiteList",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "value1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value2",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "multiply",
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resultShow",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -28,7 +83,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +100,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/interface2.sol": "calculate"
+			"Samples/whitelist.sol": "calculate"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,20 +114,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/interface.sol": {
-			"keccak256": "0x7f4fcbcdc1c0bb6d29bffba48fcd1c43455b38b1a4cfe2ef10ef12945dd4f681",
+		"Samples/whitelist.sol": {
+			"keccak256": "0x98ccce87db75d23db9e57565a744d89ac6872bdb4675848ce6345496244482cb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4380dbe49269ea4a59649391bd673ad862ef57a887c193847469d830be20a718",
-				"dweb:/ipfs/QmbbHcUQgnvjzqKmnLsycab53sQJrMmbjmx1CGFPQ9Qkg4"
-			]
-		},
-		"Samples/interface2.sol": {
-			"keccak256": "0xd107156909bca4a7ac0d5e48817dfc0872d133ea319f91123bb3326ce15f8495",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://062544e58ef90d894fe4586fc2f8357fea752b13ae9e40cdb219157c8ad17b2a",
-				"dweb:/ipfs/QmXSv9GUGq9TTVBaGki9dd3VuqeA4UptY1gB1K3y1x5cuY"
+				"bzz-raw://af4cebee50831bf00a4c1b98c23f76ac00a84f74c6761b3a75f8a8b4b813156c",
+				"dweb:/ipfs/Qmc5kjSKhaT8R5fPnU9LWGmyYtKWNiqHu39hVjHuPyosLL"
 			]
 		}
 	},

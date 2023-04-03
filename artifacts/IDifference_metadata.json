@@ -9,26 +9,47 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num3",
+						"type": "uint256"
+					}
+				],
+				"name": "addition",
+				"outputs": [
+					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "BookRecord",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMsgSender",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getName",
 				"outputs": [
 					{
 						"internalType": "string",
-						"name": "title",
+						"name": "",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "author",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -37,27 +58,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "checkID",
-						"type": "uint256"
-					},
-					{
 						"internalType": "string",
-						"name": "Title",
+						"name": "changeName",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "Author",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "ID",
-						"type": "uint256"
 					}
 				],
-				"name": "checkbook",
+				"name": "setName",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -76,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/structExample.sol": "Data"
+			"Samples/difference.sol": "IDifference"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -90,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/structExample.sol": {
-			"keccak256": "0x181bf3608f2735a6c3b5218f13ab83397fc705c9412963caa5ef24f4c393d3fd",
+		"Samples/difference.sol": {
+			"keccak256": "0x6d01e8b9022193ef39d5b26bd65ab446e4a36f2493c49880fbbbee2c9901dda5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3f9c39dd65c04d202aff59d892f2d31f0c8b11b606313f6c5c4f4f353693b52d",
-				"dweb:/ipfs/QmTefdGjR64hgrQ8CStEG2WnorvP9mihb9wBz5yDwU3HKz"
+				"bzz-raw://d2f5107edaa2afd2957bc270e7691551cc8b21a0fbf3fa2f258625d698d02333",
+				"dweb:/ipfs/QmP1YZ1sCKZmVJkd518ozqwpr66y88V2eU2eaFWPoddmSu"
 			]
 		}
 	},

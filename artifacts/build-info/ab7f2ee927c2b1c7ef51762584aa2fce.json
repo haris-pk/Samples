@@ -1,8 +1,8 @@
 {
-	"id": "c86d4852f69d0757d65c4af42ec320a9",
+	"id": "ab7f2ee927c2b1c7ef51762584aa2fce",
 	"_format": "hh-sol-build-info-1",
-	"solcVersion": "0.8.19",
-	"solcLongVersion": "0.8.19+commit.7dd6d404",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
 	"input": {
 		"language": "Solidity",
 		"sources": {
@@ -100,7 +100,7 @@
 							"multiply()": "f3593cd0"
 						}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getResult\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"multiply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Samples/interface.sol\":\"calculator\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Samples/interface.sol\":{\"keccak256\":\"0x7f4fcbcdc1c0bb6d29bffba48fcd1c43455b38b1a4cfe2ef10ef12945dd4f681\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4380dbe49269ea4a59649391bd673ad862ef57a887c193847469d830be20a718\",\"dweb:/ipfs/QmbbHcUQgnvjzqKmnLsycab53sQJrMmbjmx1CGFPQ9Qkg4\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getResult\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"multiply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Samples/interface.sol\":\"calculator\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Samples/interface.sol\":{\"keccak256\":\"0x7f4fcbcdc1c0bb6d29bffba48fcd1c43455b38b1a4cfe2ef10ef12945dd4f681\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4380dbe49269ea4a59649391bd673ad862ef57a887c193847469d830be20a718\",\"dweb:/ipfs/QmbbHcUQgnvjzqKmnLsycab53sQJrMmbjmx1CGFPQ9Qkg4\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [],
 						"types": null
@@ -140,7 +140,6 @@
 						{
 							"abstract": false,
 							"baseContracts": [],
-							"canonicalName": "calculator",
 							"contractDependencies": [],
 							"contractKind": "interface",
 							"fullyImplemented": false,
