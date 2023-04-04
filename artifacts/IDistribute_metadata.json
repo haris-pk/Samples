@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "distribute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Samples/interface test.sol": "IDistribute"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Samples/interface test.sol": {
+			"keccak256": "0xc04f813d54240d27404e0f3b7ace09664c7b4f17861ad86f665dbaebe6c4af98",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ea5c36d1eaeb52d9220cd862fa59863a20aea9823c698434f8d72b14a01774de",
+				"dweb:/ipfs/QmQmyQGSu8NQRHuook43mPEQY3AaMRimGzoj22yHrAJmrM"
+			]
+		}
+	},
+	"version": 1
+}

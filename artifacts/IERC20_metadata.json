@@ -9,24 +9,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_userAddress",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "_mint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
 						"name": "spender",
 						"type": "address"
 					},
@@ -62,7 +44,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "totalsupply",
+				"name": "total_supply",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -128,7 +110,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/interfaceERC20.sol": "IERC20"
+			"Samples/interface test.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -142,12 +124,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/interfaceERC20.sol": {
-			"keccak256": "0xef2f699018d3aa01be56b73db70bd800153c3d0b1f6ba7f22675ea2371ef6d73",
+		"Samples/interface test.sol": {
+			"keccak256": "0x501a27c5df19352d58ceb3a16d61a9106a53f6356121401827ea78c44ac41627",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://75fa34625e5e6d7587ba5fc6065fbb53b99841680f7cee97d7864e7640ce4959",
-				"dweb:/ipfs/QmXRyLC4MYPc8j7ffFA1dkFGZcBcxWLnXy5o62qKR55w8V"
+				"bzz-raw://ce7bfa8f6ff53cb664dba693dcc3916e8ced621a6af676f8e960b8360c0c8ee7",
+				"dweb:/ipfs/QmfFjk8uzrdzxq3UDuAgxicT5ozazsViWPzMLHFDQppBqH"
 			]
 		}
 	},

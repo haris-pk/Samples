@@ -49,33 +49,14 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"_mint(address,uint256)": "4e6ec247",
 			"approve(address,uint256)": "095ea7b3",
 			"balanceof(address)": "3d64125b",
-			"totalsupply()": "72dd529b",
+			"total_supply()": "3940e9ee",
 			"transfer(address,uint256)": "a9059cbb",
 			"transferfrom(address,address,uint256)": "63b0545f"
 		}
 	},
 	"abi": [
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_userAddress",
-					"type": "address"
-				},
-				{
-					"internalType": "uint256",
-					"name": "_amount",
-					"type": "uint256"
-				}
-			],
-			"name": "_mint",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
 		{
 			"inputs": [
 				{
@@ -115,7 +96,7 @@
 		},
 		{
 			"inputs": [],
-			"name": "totalsupply",
+			"name": "total_supply",
 			"outputs": [
 				{
 					"internalType": "uint256",
