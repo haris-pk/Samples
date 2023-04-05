@@ -13,3 +13,15 @@ contract task{
 
 
 }
+
+ function propertyToBuy(uint ID) public payable{
+        sellProperty memory _sellProperty;
+        _sellProperty = propertyForSell[ID];
+        address currenOwner = _sellProperty.Owner;
+        uint256 _amount = _sellProperty.propertyprice;
+        IERC20(tokenAddress).transferFrom(msg.sender, currenOwner, _amount);
+        _sellProperty.Owner =msg.sender;
+        _sellProperty.sold = true;
+    }  
+    
+}

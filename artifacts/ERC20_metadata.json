@@ -191,11 +191,11 @@
 	},
 	"sources": {
 		"Samples/interface test.sol": {
-			"keccak256": "0x501a27c5df19352d58ceb3a16d61a9106a53f6356121401827ea78c44ac41627",
+			"keccak256": "0x2ad6c8e4909110c0700baf813ee28d22c9a2272301553a3812fe9ad65cc8295e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ce7bfa8f6ff53cb664dba693dcc3916e8ced621a6af676f8e960b8360c0c8ee7",
-				"dweb:/ipfs/QmfFjk8uzrdzxq3UDuAgxicT5ozazsViWPzMLHFDQppBqH"
+				"bzz-raw://73e88d973532a4f4822e70cdd3627a5662628e383a0727c3d0c9e1265c050853",
+				"dweb:/ipfs/QmcPAzd9bCUw6r2KXBJ3H2vQN1YMhAhiurJtpoTSMLZVNW"
 			]
 		}
 	},

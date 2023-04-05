@@ -65,8 +65,8 @@ contract getERC20{
       function transfer(address to, uint amount) public{
         return IERC20(contractUserAddress).transfer(to,amount);
     }
-      function transferfrom(address from,address to,uint amount)public{
-        return IERC20(contractUserAddress).transferfrom(from,to,amount);
+      function transferfrom(address to,uint amount)public{
+        return IERC20(contractUserAddress).transferfrom(msg.sender,to,amount);
     }
 
 }
