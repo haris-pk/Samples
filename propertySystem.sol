@@ -16,6 +16,7 @@ contract propertySystem{
     address public tokenAddress;
 
 
+
     constructor(address _tokenAddress){
         tokenAddress = _tokenAddress;
         owner=msg.sender;
@@ -29,17 +30,22 @@ contract propertySystem{
         bool sold;
     }
 
+    sellProperty[] listofProperty;
+
+
     mapping(uint =>sellProperty) public propertyForSell;
+    mapping(uint =>sellProperty) public propertyList;
 
     function sellingProperty(uint propertyID,string memory propertyName,string memory propertyLocation,uint Price) public{
         sellProperty memory record;
-
+        require(owner==msg.sender, "only owner can sell the property");
         record.propertyid=propertyID;
         record.propertyname=propertyName;
         record.propertylocation=propertyLocation;
         record.propertyprice=Price;
         record.Owner = msg.sender;
         propertyForSell[propertyID] = record;
+        listofProperty.push(record);
 
     }
 
@@ -51,6 +57,7 @@ contract propertySystem{
         IERC20(tokenAddress).transferFrom(msg.sender,currentOwner,_amount);
         property_Sell.Owner=msg.sender;
         property_Sell.sold=true;
-    }    
+    }
+
     
 }

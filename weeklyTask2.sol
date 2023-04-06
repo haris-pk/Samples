@@ -51,6 +51,7 @@ contract property{
     function listofrecord(uint propertyID) public returns(uint) {
         propertyDetails memory list;
         propertyList[record] = list;
+        propertyList
 
 
 
