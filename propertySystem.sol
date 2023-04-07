@@ -58,6 +58,9 @@ contract propertySystem{
         property_Sell.Owner=msg.sender;
         property_Sell.sold=true;
     }
-
+    
+    function getAllRecords() public view returns(sellProperty[] memory){
+        return listofProperty;
+    }
     
 }
