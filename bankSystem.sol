@@ -47,27 +47,34 @@ contract bankingSystem{
     function clientDeposit(uint ID, uint Amount) public {
         Register storage depositAmount;
         depositAmount = userRegistration[ID];
-        Amount = depositAmount.accountBalance;
+        depositAmount.accountBalance += Amount; 
 
         IERC20(tokenAddress).transferFrom(msg.sender, address(this), Amount);
     }
 
-    function sendingAmount( address to, uint Amount) public {
-        Register storage amountToSend;
-        amountToSend = userRegistration[Amount];
-        IERC20(tokenAddress).transferFrom(msg.sender,to,Amount);
+    function sendingAmount( uint ID, uint Amount) public {
+        address recieverAddress = userRegistration[ID].Address;
+        IERC20(tokenAddress).transferFrom(msg.sender,recieverAddress,Amount);
+    }
 
+    function sendAmount(uint senderId, uint rcvrId, uint amount) public {
+        Register storage sender = userRegistration[senderId];
+        Register storage rcvr = userRegistration[rcvrId];
+        require(sender.accountBalance >= amount,  "In valid Amount");
+        sender.accountBalance -= amount;
+        rcvr.accountBalance+= amount;
     }
 
     function withdrawAmount(uint Amount) public {
         Register storage withdraw;
         withdraw = userRegistration[Amount];
-        IERC20(tokenAddress).transfer(owner,Amount);
+        IERC20(tokenAddress).transfer(msg.sender,Amount);
     }
 
-
-
-
-
+    function emergencyWithDraw(uint Amount) public{
+        Register storage emergWithDraw;
+        emergWithDraw = userRegistration[Amount];
+        IERC20(tokenAddress).transfer(owner,Amount);
+    }
 
 }

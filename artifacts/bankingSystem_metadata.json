@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -58,6 +58,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "Amount",
+						"type": "uint256"
+					}
+				],
+				"name": "emergencyWithDraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -73,9 +86,32 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "senderId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rcvrId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sendAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ID",
+						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
@@ -169,7 +205,7 @@
 		"compilationTarget": {
 			"Samples/bankSystem.sol": "bankingSystem"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -214,11 +250,11 @@
 			]
 		},
 		"Samples/bankSystem.sol": {
-			"keccak256": "0xc80f8a6f41eee79550324b92ced169e7319e3f496ef8f286ac14b7d1bc4d0a76",
+			"keccak256": "0xd4b3308a64d3048050e9f824286ec0468308d63d5e250f83478d15355bc77e42",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36f9dc9c3d75f4ebd60c3b2bf475548396bc2205300b4cc98f5d9d3e0864120f",
-				"dweb:/ipfs/QmNyryx2g22MVK1tRSt7r47P9n5a7Pmg6k1Tjfjr79eh3R"
+				"bzz-raw://e290402fef4139c5fb3fe56babffe8ef303676688912f3d74bc8adb859302608",
+				"dweb:/ipfs/QmSNwhoAQdTV3tEKYFc4nZuuRHWak2VEf7qfPX7rKNbdUi"
 			]
 		}
 	},
