@@ -328,7 +328,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/propertySystem.sol": "MyToken"
+			"Samples/bankSystem.sol": "MyToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -374,12 +374,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"Samples/propertySystem.sol": {
-			"keccak256": "0xdc718b71490afb52da4b89cb25f06796c469bee22537dbf10cef35fd8d85e422",
+		"Samples/bankSystem.sol": {
+			"keccak256": "0xc80f8a6f41eee79550324b92ced169e7319e3f496ef8f286ac14b7d1bc4d0a76",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3cdafe63b6819e7690a55bdd35f3fcb3c801e09cb11332dab06bdb6eaa95b982",
-				"dweb:/ipfs/QmYdj5j3tTXrJVdJVkSt482ywdK5nKN3v17gnr5Eti957o"
+				"bzz-raw://36f9dc9c3d75f4ebd60c3b2bf475548396bc2205300b4cc98f5d9d3e0864120f",
+				"dweb:/ipfs/QmNyryx2g22MVK1tRSt7r47P9n5a7Pmg6k1Tjfjr79eh3R"
 			]
 		}
 	},
