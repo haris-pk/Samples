@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -41,6 +41,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "emergencyWithdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
@@ -69,13 +87,37 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "Sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sendFunds",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
 					}
 				],
 				"name": "withdraw",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "payable",
 				"type": "function"
 			},
@@ -99,7 +141,7 @@
 		"compilationTarget": {
 			"Samples/bankCurrency.sol": "bankingSystem"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -112,11 +154,11 @@
 	},
 	"sources": {
 		"Samples/bankCurrency.sol": {
-			"keccak256": "0x2cfded2e4e6afb35ae190590f06dd3d91e5df78d5b4500c9a0cbaee471c661b7",
+			"keccak256": "0xa06624604f3c7c2de64e963f288bd8455987327d76e8ed513e23620d043d25a6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1302c422c2b5604a33f01cd33d1cdcd63fd7c6ce9d4309cd056f9cefe1e44f96",
-				"dweb:/ipfs/QmVrRnEmrZyHaNSEZ5vZu7PEKeB3eiBEMtf9ZmhTJiYMKZ"
+				"bzz-raw://2a6d0438ac68e5ea8e4d40d27941bf464cc04e9d82f7cf6677008775a35e62c9",
+				"dweb:/ipfs/Qmb2SR4pQdoCE2W7gDrpc8LTgscABqaAbVf6jVGkNeLKRw"
 			]
 		}
 	},
