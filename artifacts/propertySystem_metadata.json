@@ -6,60 +6,9 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_tokenAddress",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "getAllRecords",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "address",
-								"name": "Owner",
-								"type": "address"
-							},
-							{
-								"internalType": "uint256",
-								"name": "propertyid",
-								"type": "uint256"
-							},
-							{
-								"internalType": "string",
-								"name": "propertyname",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "propertylocation",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "propertyprice",
-								"type": "uint256"
-							},
-							{
-								"internalType": "bool",
-								"name": "sold",
-								"type": "bool"
-							}
-						],
-						"internalType": "struct propertySystem.sellProperty[]",
-						"name": "",
-						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			},
 			{
 				"inputs": [
@@ -72,13 +21,8 @@
 				"name": "propertyForSell",
 				"outputs": [
 					{
-						"internalType": "address",
-						"name": "Owner",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "propertyid",
+						"name": "id",
 						"type": "uint256"
 					},
 					{
@@ -92,48 +36,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint256",
-						"name": "propertyprice",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "sold",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "propertyList",
-				"outputs": [
-					{
 						"internalType": "address",
-						"name": "Owner",
+						"name": "owner",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "propertyid",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "propertyname",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "propertylocation",
-						"type": "string"
 					},
 					{
 						"internalType": "uint256",
@@ -217,7 +122,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/propertySystem.sol": "propertySystem"
+			"Samples/property.sol": "propertySystem"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -263,12 +168,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"Samples/propertySystem.sol": {
-			"keccak256": "0xdc718b71490afb52da4b89cb25f06796c469bee22537dbf10cef35fd8d85e422",
+		"Samples/property.sol": {
+			"keccak256": "0x3aa07a0748adcff454e660dc5a77e0dc113c9c62bf898db36eb045c6f843e9ca",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3cdafe63b6819e7690a55bdd35f3fcb3c801e09cb11332dab06bdb6eaa95b982",
-				"dweb:/ipfs/QmYdj5j3tTXrJVdJVkSt482ywdK5nKN3v17gnr5Eti957o"
+				"bzz-raw://7284bc70663e767c438ecc2a5f86ed6bdd8732624886d5efb6a8b34d15d120f1",
+				"dweb:/ipfs/QmZFSC9LcwwoJLS4vLgrgTvurLY59DoWahq7mim5y6UdYR"
 			]
 		}
 	},

@@ -48,15 +48,53 @@ contract property{
 
     }
 
-    function listofrecord(uint propertyID) public returns(uint) {
-        propertyDetails memory list;
-        propertyList[record] = list;
-        propertyList
+    pragma solidity ^0.8.0;
 
+contract PayableBankingSystem {
+    mapping(address => uint256) private balances;
+    address private owner;
 
+    event Transfer(address indexed sender, address indexed recipient, uint256 amount);
 
-
+    constructor() {
+        owner = msg.sender;
     }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Unauthorized");
+        _;
+    }
+
+    function deposit() public payable {
+        balances[msg.sender] += msg.value;
+    }
+
+    function withdraw(uint256 amount) public payable {
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+        balances[msg.sender] -= amount;
+        payable(msg.sender).transfer(amount);
+        emit Transfer(address(this), msg.sender, amount);
+    }
+
+    function getBalance() public view returns (uint256) {
+        return balances[msg.sender];
+    }
+
+    function authorizeAccount(address account) public onlyOwner {
+        // Implement account authorization code here
+    }
+
+    function transfer(address payable recipient, uint256 amount) public payable {
+        require(msg.value == amount, "Insufficient funds");
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+        balances[msg.sender] -= amount;
+        balances[recipient] += amount;
+        emit Transfer(msg.sender, recipient, amount);
+    }
+}
+```
+
+    
     fallback() external payable{}
     receive() external payable{}
 }

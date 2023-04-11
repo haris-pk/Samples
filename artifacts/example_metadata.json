@@ -6,160 +6,29 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "allowence",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "anyNumber",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "approve",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "checkbalance",
-						"type": "address"
-					}
-				],
-				"name": "balanceof",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "userAddress",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "mint",
+				"name": "arraySequence",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "totalsupply",
+				"name": "result",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint256[]",
 						"name": "",
-						"type": "uint256"
+						"type": "uint256[]"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transfer",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transferfrom",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -176,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/transfer1.sol": "example"
+			"Samples/finalarray.sol": "example"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -190,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/transfer1.sol": {
-			"keccak256": "0x7eb3f14a121a4810989ee9436c2c894240313668c051461193e605edbdd6f5da",
+		"Samples/finalarray.sol": {
+			"keccak256": "0xc98a39d79f63e01eac889e93a2a5c588f6d79b12bc71511265e01e0e77fade46",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a85c85180fcb174f3236e2321af92b91f735fe08027a9aeb9bd4d76004f508e9",
-				"dweb:/ipfs/QmXFRiExCF6UJRhHFPbVWnbQsJ4MPEVLVa8v9eUvn5bwsV"
+				"bzz-raw://24582642db7d8f4832c0881159ac359b80897d587d2cb2f0a04c52be5e9fb306",
+				"dweb:/ipfs/QmYyaB8YEpmKTnjBLbVXip1j3s2M2H77sggdDEm5twaJDN"
 			]
 		}
 	},

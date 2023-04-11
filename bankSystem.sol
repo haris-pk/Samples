@@ -62,18 +62,20 @@ contract bankingSystem{
         Register storage rcvr = userRegistration[rcvrId];
         require(sender.accountBalance >= amount,  "In valid Amount");
         sender.accountBalance -= amount;
-        rcvr.accountBalance+= amount;
+        rcvr.accountBalance += amount;
     }
 
     function withdrawAmount(uint Amount) public {
         Register storage withdraw;
         withdraw = userRegistration[Amount];
+        require(withdraw.accountBalance >= Amount, "in valid amount");
+
         IERC20(tokenAddress).transfer(msg.sender,Amount);
     }
 
     function emergencyWithDraw(uint Amount) public{
         Register storage emergWithDraw;
-        emergWithDraw = userRegistration[Amount];
+        emergWithDraw = userRegistration[Amount];    
         IERC20(tokenAddress).transfer(owner,Amount);
     }
 
