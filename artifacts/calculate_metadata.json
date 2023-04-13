@@ -1,14 +1,39 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "whiteListAddress",
+				"type": "event"
 			},
 			{
 				"inputs": [
@@ -102,7 +127,7 @@
 		"compilationTarget": {
 			"Samples/whitelist.sol": "calculate"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -115,11 +140,11 @@
 	},
 	"sources": {
 		"Samples/whitelist.sol": {
-			"keccak256": "0x98ccce87db75d23db9e57565a744d89ac6872bdb4675848ce6345496244482cb",
+			"keccak256": "0x3032ff6d2a23c83b3fe63b62fc246a991960a54d82c0725c9c126281d5f9d499",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://af4cebee50831bf00a4c1b98c23f76ac00a84f74c6761b3a75f8a8b4b813156c",
-				"dweb:/ipfs/Qmc5kjSKhaT8R5fPnU9LWGmyYtKWNiqHu39hVjHuPyosLL"
+				"bzz-raw://99ef420ecf250c2f7ddfa28f1dea8e1c8ce885bd4892daf2e6c8a03e594c341e",
+				"dweb:/ipfs/QmaUQxabrfsyvBsi3rcds83XZKA7EHzCPoMLJywVMZrLNh"
 			]
 		}
 	},

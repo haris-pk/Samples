@@ -5,8 +5,10 @@ contract calculate {
 
     address public owner;
 
-    constructor(){
-        isExist[msg.sender]=true;
+    event whiteListAddress(address indexed, uint256);
+
+    constructor(address user){
+        isExist[user]=true;
         owner=msg.sender;
 
     }
@@ -20,6 +22,8 @@ contract calculate {
             isExist[user]=true;
         else
             revert("not accessible");
+
+        emit whiteListAddress(user, block.timestamp);
 
     }
 
