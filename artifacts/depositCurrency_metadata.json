@@ -8,17 +8,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "page",
+						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "size",
 						"type": "uint256"
 					}
 				],
-				"name": "transfer",
+				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -37,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/interfacecheck.sol": "check"
+			"Samples/map.sol": "depositCurrency"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -51,12 +51,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Samples/interfacecheck.sol": {
-			"keccak256": "0xee2ac11a49dff8c9aa95290aa15ca0c4f22c5e371c589cb9338fbeecbf1773bd",
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://34189491deca7a9c0d1ef5c4543e6db0c0584e5d5debec7acc18c201da629fb0",
-				"dweb:/ipfs/QmaXRftDmLXqENZG4pcP6qd2VRx9qPYHhfHhAabcMY2zbo"
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"Samples/map.sol": {
+			"keccak256": "0xab0d3e2e050509e8fc1b2189baad666ce0b75be641bb87f5bde5864507e61ae6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://95f082e56fdd7e5555f1154a013ddc9fffe7326e5f66b79dcd4def19404a1500",
+				"dweb:/ipfs/QmPXu1kX7AUiMdvHUkUMH2Uah5WwHsxhjUzseWh9BQzN35"
 			]
 		}
 	},
