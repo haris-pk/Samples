@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -34,6 +34,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "blacklist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
@@ -41,18 +60,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_sender",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"name": "emergencyWithdraw",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -88,7 +96,26 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "Sender",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "restrictedList",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
 						"type": "address"
 					},
 					{
@@ -105,19 +132,39 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "setBlackList",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "setRestrictedList",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
 					}
 				],
 				"name": "withdraw",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
@@ -133,15 +180,19 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"withdraw(uint256)": {
+					"notice": "user in restricted list can deposit but cannot withdraw user in blacklist can not deposit and withdraw"
+				}
+			},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"Samples/bankCurrency.sol": "bankingSystem"
+			"Samples/bankCurrency.sol": "BankingSystem"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -154,11 +205,11 @@
 	},
 	"sources": {
 		"Samples/bankCurrency.sol": {
-			"keccak256": "0xa06624604f3c7c2de64e963f288bd8455987327d76e8ed513e23620d043d25a6",
+			"keccak256": "0xba9270bafcb34aaa0e5e1633d4e9b860d2ff972b62e133b7a788206bdcd1deed",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2a6d0438ac68e5ea8e4d40d27941bf464cc04e9d82f7cf6677008775a35e62c9",
-				"dweb:/ipfs/Qmb2SR4pQdoCE2W7gDrpc8LTgscABqaAbVf6jVGkNeLKRw"
+				"bzz-raw://cb02b0c71671fe272752b16339e8601061f2bfa486654bdfc3b48b4db5d1e44e",
+				"dweb:/ipfs/QmUfphx17RCeoxqF6Nr3p5fzRUdXGrzfwcNSccw2sx3BNm"
 			]
 		}
 	},
